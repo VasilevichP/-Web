@@ -10,8 +10,6 @@ h1 {
 }
 
 .cont {
-    width: 1440px;
-    margin: auto;
     background-color: #aeff8d;
     padding: 16px;
     border-radius: 15px;
@@ -76,4 +74,8 @@ a {
 }
 .descr3{
     text-align: justify;
+}
+.big{    
+    width: 1440px;
+    margin: auto;
 }
