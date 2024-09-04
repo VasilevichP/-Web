@@ -49,15 +49,15 @@ a {
 }
 @font-face {
     font-family: "St1";
-    src: url("./fonts/Roboto-Regular.ttf");
+    src: url("Roboto-Regular.ttf");
 }
 @font-face {
     font-family: "St2";
-    src: url("./fonts/Montserrat-Regular.ttf");
+    src: url("Montserrat-Regular.ttf");
 }
 @font-face {
     font-family: "St3";
-    src: url("./fonts/Inter_18pt-Regular.ttf");
+    src: url("Inter_18pt-Regular.ttf");
 }
 .one{
     font-family: "St1";
