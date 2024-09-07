@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<style>
+    fieldset {
+        width: 35%;
+        margin: auto;
+    }
+
+    input:not([type = radio]) {
+        border-radius: 5px;
+        border-color: #2d2d2d;
+        border-width: 1px;
+        height: 24px;
+    }
+
+    legend {
+        font-size: larger;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    label > span {
+        transition: all .2s;
+        transform-origin: top left;
+        font-size: 15px;
+    }
+
+    .fs2 {
+        border: none;
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    input ~ label {
+        margin-top: 0;
+        margin-right: 2em;
+    }
+    button{
+        background-color: #2d2d2d;
+        color: white;
+        margin-top: 2em;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+</style>
+<body>
+<div style="margin-top: 5em"></div>
+<form>
+    <fieldset>
+        <legend>Анкета знакомств</legend>
+        <label>
+            <input name="name">
+            <span>ФИО</span>
+        </label>
+        <label>
+            <input name="date_of_birth" type="date" max="2024-09-06">
+            <span>Дата рождения</span>
+        </label>
+        <fieldset class="fs2">
+            <legend style="font-size: 15px">Пол</legend>
+            <div style="padding: 5px;display: flex;">
+                <input type="radio" id="man" name="gender" value="M"/>
+                <label for="man">Мужской</label><br/>
+
+                <input type="radio" id="woman" name="gender" value="W"/>
+                <label for="woman">Женский</label>
+            </div>
+        </fieldset>
+        <label>
+            <input name="tel" type="tel" pattern="[0-9]{12}">
+            <span>Номер телефона</span>
+        </label>
+        <button type="submit">Отправить</button>
+    </fieldset>
+</form>
+</body>
