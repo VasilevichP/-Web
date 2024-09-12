@@ -44,7 +44,8 @@
         margin-top: 0;
         margin-right: 2em;
     }
-    button{
+
+    button {
         background-color: #2d2d2d;
         color: white;
         margin-top: 2em;
@@ -57,14 +58,22 @@
 <div style="margin-top: 5em"></div>
 <form>
     <fieldset>
-        <legend>Анкета знакомств</legend>
+        <legend>Тестирование полей</legend>
         <label>
             <input name="name">
             <span>ФИО</span>
         </label>
         <label>
+            <input name="name" type="password">
+            <span>Пароль от телефона</span>
+        </label>
+        <label>
             <input name="date_of_birth" type="date" max="2024-09-06">
             <span>Дата рождения</span>
+        </label>
+        <label>
+            <input name="file" type="email">
+            <span>Адрес эл. почты</span>
         </label>
         <fieldset class="fs2">
             <legend style="font-size: 15px">Пол</legend>
@@ -76,11 +85,43 @@
                 <label for="woman">Женский</label>
             </div>
         </fieldset>
+        <fieldset class="fs2">
+            <legend style="font-size: 15px">Любимый вкус</legend>
+            <div style="padding: 5px">
+                <div style="display:flex;">
+                    <input type="checkbox" id="sweet" name="taste" value="Sw"/>
+                    <label for="man">Сладкий</label><br/>
+                </div>
+                <div style="display:flex;">
+                    <input type="checkbox" id="sour" name="taste" value="So"/>
+                    <label for="woman">Кислый</label>
+                </div>
+                <div style="display:flex;">
+                    <input type="checkbox" id="bitter" name="taste" value="B"/>
+                    <label for="woman">Горький</label>
+                </div>
+                <div style="display:flex;">
+                    <input type="checkbox" id="salty" name="taste" value="Sa"/>
+                    <label for="woman">Соленый</label>
+                </div>
+            </div>
+        </fieldset>
+        <label>
+            <input name="file" type="file">
+            <span>Файлик</span>
+        </label>
         <label>
             <input name="tel" type="tel" pattern="[0-9]{12}">
             <span>Номер телефона</span>
         </label>
-        <button type="submit">Отправить</button>
+        <label>
+            <input name="submit" type="submit">
+            <span></span>
+        </label>
+        <label>
+            <input name="reset" type="reset">
+            <span></span>
+        </label>
     </fieldset>
 </form>
 </body>
