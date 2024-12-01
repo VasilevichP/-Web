@@ -33,7 +33,8 @@ article {
         justify-content: space-around;
     }
     .adaptive > article:nth-child(n+4) {
-        width: 46%;
+        box-sizing: border-box;
+        width: 46.7%;
     }
 }
 
